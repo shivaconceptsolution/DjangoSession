@@ -1,0 +1,21 @@
+<form method="post" action="add/addlogic">
+	{% csrf_token %}
+<input type="checkbox" name="checks[]" value="C" />C
+<input type="checkbox" name="checks[]" value="CPP" />CPP
+<input type="checkbox" name="checks[]" value="DS" />DS
+<input type="checkbox" name="checks[]" value="ETC" />ETC
+
+<br><br>
+<select name="course[]" multiple="true">
+	<option value="JAVA">JAVA</option>
+    <option value=".NET">.NET</option>
+    <option value="PHP">PHP</option>
+    <option value="iOS">iOS</option>
+     <option value="Android">Android</option>
+     <option value="C#">C#</option>
+</select>
+<br>
+<br>
+
+	<input type="submit" name="btnsubmit">
+</form>

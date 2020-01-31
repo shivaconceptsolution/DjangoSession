@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>View Registered Users</h1>
+Welcome {{res2}}
+<a href="logout">Logout</a>
+<br><br>
+<table border="1">
+	<tr><th>ID</th><th>Email</th><th>Password</th><th>Mobile</th><th>Fullname</th></tr>
+{%  for data in res1    %}
+
+<tr><td>{{data.id}}</td><td>{{data.emailid}}</td> <td>{{data.password}}</td><td>{{data.mobile}}</td><td>{{data.fullname}}</td><td><a href="editreg?q={{data.id}}">EDIT</a>||<a href="deletereg?q={{data.id}}">DELETE</a></td></tr>
+
+{% endfor  %}
+</table>
+<a href="reg">Back</a>
+</body>
+</html>

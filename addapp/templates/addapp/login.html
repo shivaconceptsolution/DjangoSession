@@ -1,0 +1,16 @@
+<h1>Login Here</h1>
+<form method="post" action="loginlogic">
+	{% csrf_token %}
+<input type="email" name="txtemail" placeholder="enter email" required=""  /><br><br>
+<input type="password" name="txtpass" placeholder="enter password" required="" /><br><br>
+
+<br>
+<br>
+
+<input type="submit" name="btnsubmit" value="Login">
+</form>
+{{msg}}
+<br><br>
+<a href="reg">New User Sign Up Here</a>
+
+

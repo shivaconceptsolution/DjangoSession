@@ -1,0 +1,18 @@
+<form method="post" action="reglogic">
+	{% csrf_token %}
+<input type="email" name="txtemail" placeholder="enter email" required=""  /><br><br>
+<input type="text" name="txtpass" placeholder="enter password" required="" /><br><br>
+<input type="text" name="txtmobile" placeholder="enter mobile" required="" /><br><br>
+<input type="text" name="txtname" placeholder="enter fullname" required="" /><br>
+<br>
+
+<br>
+<br>
+
+	<input type="submit" name="btnsubmit" value="Register">
+</form>
+{{msg}}
+<br><br>
+<a href="login">Login Here</a>
+
+
